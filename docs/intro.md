@@ -16,4 +16,4 @@ Follow [Hexo's docs](https://hexo.io/docs/) and create your own today!
 
 :::
 
-So, [get started](./get-started.md) now.
+So, [get started](./category/getting-started/) now.
