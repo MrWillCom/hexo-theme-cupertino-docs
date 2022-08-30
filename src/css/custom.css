@@ -41,6 +41,15 @@
   backdrop-filter: blur(32px);
 }
 
+@media (max-width: 996px) {
+  .navbar {
+    backdrop-filter: none;
+  }
+  .navbar-sidebar {
+    backdrop-filter: blur(32px);
+  }
+}
+
 .navbar__inner {
   align-content: center;
 }
