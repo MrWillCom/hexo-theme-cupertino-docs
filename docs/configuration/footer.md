@@ -26,12 +26,8 @@ footer:
   Blog:
     Blog: /
     Archives: /archives
-    Tags: /tags
-    Categories: /categories
     Search: /search
-    Friends: /friends
     Projects: /projects
-    Resume: /resume
     About: /about
     RSS: /atom.xml
   Projects:
@@ -39,4 +35,12 @@ footer:
     RSA CLI: https://github.com/MrWillCom/rsa-cli
   Me:
     GitHub: https://github.com/MrWillCom
+```
+
+## Footer Extra Description
+
+Show extra description in the footer.
+
+```yaml
+footer_extra_description: [extra-description]
 ```
