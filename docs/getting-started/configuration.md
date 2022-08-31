@@ -5,7 +5,7 @@ description: Customizing and enabling some optional features.
 
 # Configuration
 
-Customizing and enabling some optional features of Theme Çupertino requires you to edit your config.
+Customizing and enabling some optional features of Theme Cupertino requires you to edit your config.
 
 You can find theme config at `themes/cupertino/_config.yaml`. And sometimes you may need to edit your blog config, directly at `_config.yaml` in the root directory of your blog.
 

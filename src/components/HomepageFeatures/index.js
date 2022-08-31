@@ -29,7 +29,7 @@ const FeatureList = [
     description: (
       <>
         <Link href='https://hexo.io/'>Hexo</Link> is a fast, simple and
-        powerful blog framework, works perfectly with your block.
+        powerful blog framework, works perfectly with your blog.
       </>
     ),
   },
