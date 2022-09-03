@@ -127,6 +127,11 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
+      algolia: {
+        appId: '2360V9PCQC',
+        apiKey: 'aa0401d80f4a4b9be77b193386e6cf51',
+        indexName: 'cupertino',
+      },
     }),
 };
 
