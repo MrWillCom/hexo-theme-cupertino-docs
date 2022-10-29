@@ -11,7 +11,7 @@ Quick links shows at the end of your site.
 
 Syntax:
 
-```yaml
+```yaml title="theme/hexo-theme-cupertino/_config.yml"
 footer:
   <section-title>:
     <name>: <link>
@@ -21,7 +21,7 @@ footer:
 
 Example:
 
-```yaml
+```yaml title="theme/hexo-theme-cupertino/_config.yml"
 footer:
   Blog:
     Blog: /
@@ -41,6 +41,6 @@ footer:
 
 Show extra description in the footer.
 
-```yaml
+```yaml title="theme/hexo-theme-cupertino/_config.yml"
 footer_extra_description: [extra-description]
 ```

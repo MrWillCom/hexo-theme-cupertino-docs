@@ -13,7 +13,7 @@ Search features are enabled by default, but requires a few steps to make it avai
   $ npm install hexo-generator-search --save
   ```
 2. Add these lines to theme configuration `_config.yml`:
-  ```yaml
+  ```yaml title="theme/hexo-theme-cupertino/_config.yml"
   search: true
   search_path: search.json
   ```
@@ -22,10 +22,10 @@ Search features are enabled by default, but requires a few steps to make it avai
   $ hexo new page 'search'
   ```
 4. Replace all its content with:
-  ```markdown
+  ```markdown title=source/search/index.md
   ---
   type: search
   ---
   ```
 
-Done! Your search page is ready at `/search/`.
+Done! Your search page is ready at `/search`.

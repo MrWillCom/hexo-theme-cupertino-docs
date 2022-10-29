@@ -9,7 +9,7 @@ Quick links shows at the top of your site.
 
 ![Preview of navigation](./img/navigation.png)
 
-```yaml
+```yaml title="theme/hexo-theme-cupertino/_config.yml"
 nav:
   title: Blog
   items:

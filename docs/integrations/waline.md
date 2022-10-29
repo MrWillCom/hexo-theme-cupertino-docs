@@ -9,7 +9,7 @@ We support installing Waline to your blog.
 
 Add `waline` property to your blog configuration `_config.yml`:
 
-```yml
+```yml title="_config.yml"
 waline:
 # Don't set `el` here.
   path: location.pathname

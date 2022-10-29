@@ -7,7 +7,7 @@ description: Use GitHub Discussions for comment features.
 
 It's so simple to add giscus to your blog, just get `<script ...></script>` and paste it here:
 
-```yaml
+```yaml title="_config.yml"
 giscus:
   <script ...>
   </script>

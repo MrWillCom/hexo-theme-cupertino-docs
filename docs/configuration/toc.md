@@ -9,11 +9,11 @@ Generates a TOC refers to headings in posts.
 
 ![Preview of TOC](./img/toc.png)
 
-```yaml
+```yaml title="theme/hexo-theme-cupertino/_config.yml"
 toc: true
 ```
 Control the depth when generating, for example, to heading 2:
 
-```yaml
+```yaml title="theme/hexo-theme-cupertino/_config.yml"
 toc_max_depth: 2
 ```

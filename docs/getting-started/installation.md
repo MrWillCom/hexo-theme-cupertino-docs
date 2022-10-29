@@ -19,6 +19,6 @@ $ git clone https://github.com/<username>/hexo-theme-cupertino.git themes/cupert
 
 ## Switch to Theme Cupertino
 
-```yaml title="_config.yaml"
+```yaml title="_config.yml"
 theme: cupertino
 ```

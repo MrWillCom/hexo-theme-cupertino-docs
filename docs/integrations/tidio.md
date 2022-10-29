@@ -13,7 +13,7 @@ We support installing Tidio to your blog.
 4. Copy the URL in the code it provided.
    ![Screenshot of the settings page and the integration url](./img/tidio-integration-url.png)
 5. Add `tidio` property to your blog configuration `_config.yml`:
-   ```yml
+   ```yml title="_config.yml"
    tidio: <the-url-you-copied-in-the-previous-step>
    ```
 6. Done!

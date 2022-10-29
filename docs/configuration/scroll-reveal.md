@@ -7,12 +7,12 @@ description: Display and hide components automatically.
 
 Display and hide components automatically when readers scrolls the page.
 
-```yaml
+```yaml title="theme/hexo-theme-cupertino/_config.yml"
 scroll_reveal: true
 ```
 For further configuration, see [Customization — ScrollReveal](https://scrollrevealjs.org/guide/customization.html), and edit EJS source code:
 
-```html title=layout/layout.ejs {5-7}
+```html title=theme/hexo-theme-cupertino/layout/layout.ejs {5-7}
 <% if (theme.scroll_reveal) { %>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script>

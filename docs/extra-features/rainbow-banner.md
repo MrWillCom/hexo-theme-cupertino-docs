@@ -11,7 +11,7 @@ Rainbow banner is enabled by default, and will only appear every June. You can c
 
 This is the default config:
 
-```yaml
+```yaml title="theme/hexo-theme-cupertino/_config.yml"
 # rainbow!
 rainbow_banner: true
 rainbow_banner_colors:

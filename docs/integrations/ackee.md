@@ -7,7 +7,7 @@ description: Open source site analyzing.
 
 It's such a simple thing to add Ackee to your blog, just copy `<script ...></script>` and put it here like this:
 
-```yaml
+```yaml title="_config.yml"
 ackee:
   <script ...></script>
 ```
