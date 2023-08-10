@@ -1,0 +1,38 @@
+import { Steps } from 'nextra/components'
+
+# Search
+
+Search features are enabled by default, but requires a few steps to make it available.
+
+<Steps>
+### Run
+
+```bash
+# [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)
+$ npm install hexo-generator-search --save
+```
+
+### Add these lines to theme configuration `_config.yml`:
+
+```yaml filename="theme/hexo-theme-cupertino/_config.yml"
+search: true
+search_path: search.json
+```
+
+### Add new search page so that Hexo will generate it.
+
+```bash
+$ hexo new page 'search'
+```
+
+### Replace all its content with:
+
+```markdown filename="source/search/index.md"
+---
+type: search
+---
+```
+
+</Steps>
+
+Done! Your search page is ready at `/search`.
