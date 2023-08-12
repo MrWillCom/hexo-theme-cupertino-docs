@@ -1,8 +1,33 @@
+import { useRouter } from 'next/router'
+import { useConfig } from 'nextra-theme-docs'
+
 export default {
   useNextSeoProps() {
     return {
       titleTemplate: '%s – Hexo Theme Cupertino',
     }
+  },
+  head: () => {
+    const { asPath, defaultLocale, locale } = useRouter()
+    const { title } = useConfig()
+
+    return (
+      <>
+        <meta property="og:title" content={`${title} – Hexo Theme Cupertino`} />
+        <meta
+          property="og:description"
+          content="The Docs of Hexo Theme Cupertino."
+        />
+        <meta
+          property="og:image"
+          content="https://blog.mrwillcom.com/img/000001.png"
+        />
+        <meta
+          property="og:url"
+          content={`https://cupertino.mrwillcom.com${asPath}`}
+        />
+      </>
+    )
   },
   logo: (
     <span>
