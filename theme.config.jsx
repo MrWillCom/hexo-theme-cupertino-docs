@@ -54,4 +54,7 @@ export default {
       </small>
     ),
   },
+  toc: {
+    backToTop: true,
+  },
 }
