@@ -11,11 +11,19 @@ export const metadata = {
 const banner = <></>
 const navbar = (
   <Navbar
-    logo={<span>Hexo Theme <b>Cupertino</b></span>}
+    logo={
+      <span>
+        Hexo Theme <b>Cupertino</b>
+      </span>
+    }
     // ... Your additional navbar options
   />
 )
-const footer = <Footer><small>© 2022 - {new Date().getFullYear()} Hexo Theme Cupertino.</small></Footer>
+const footer = (
+  <Footer>
+    <small>© 2022 - {new Date().getFullYear()} Hexo Theme Cupertino.</small>
+  </Footer>
+)
 
 export default async function RootLayout({ children }) {
   return (
