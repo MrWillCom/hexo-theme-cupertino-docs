@@ -16,6 +16,8 @@ export default {
     type: 'separator',
     title: 'Advanced',
   },
+  icons: 'Icons',
   'scroll-reveal': 'Scroll Reveal',
+  'view-transition': 'View Transition',
   'rainbow-banner': 'Rainbow Banner',
 }
