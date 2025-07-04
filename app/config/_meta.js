@@ -17,6 +17,7 @@ export default {
     title: 'Advanced',
   },
   icons: 'Icons',
+  cdn: 'CDN',
   'scroll-reveal': 'Scroll Reveal',
   'view-transition': 'View Transition',
   'hero-exit-while-scrolling': 'Hero Exit While Scrolling',
