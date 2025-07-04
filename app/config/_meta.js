@@ -16,6 +16,7 @@ export default {
   posts: 'Posts',
   toc: 'Table of Contents',
   'color-scheme': 'Color Scheme',
+  'builtin-components': 'Built-in Components',
   _3: {
     type: 'separator',
     title: 'Advanced',
