@@ -1,0 +1,33 @@
+# Rainbow Banner
+
+import { Tabs } from 'nextra/components'
+
+<Tabs items={['Rainbow banner enabled', 'Rainbow banner disabled']}>
+  <Tabs.Tab>
+    ![Screenshot of navigation with rainbow banner
+    enabled](./img/rainbow-banner-enabled.jpg)
+  </Tabs.Tab>
+  <Tabs.Tab>
+    ![Screenshot of navigation with rainbow banner
+    disabled](./img/rainbow-banner-disabled.jpg)
+  </Tabs.Tab>
+</Tabs>
+
+Rainbow banner is disabled by default. Enabling it will make it appear every June:
+
+```yml filename="_config.cupertino.yml"
+rainbow_banner: true
+rainbow_banner_colors:
+  - '#e50000'
+  - '#ff8d00'
+  - '#ffee00'
+  - '#008121'
+  - '#004cff'
+  - '#760188'
+rainbow_banner_shown: auto
+rainbow_banner_month: 6
+```
+
+`rainbow_banner_colors` accepts an array of CSS colors. `rainbow_banner_shown` accepts `auto` or `always`.
+
+To to display rainbow banner all year long, change `rainbow_banner_shown` to `always`.
