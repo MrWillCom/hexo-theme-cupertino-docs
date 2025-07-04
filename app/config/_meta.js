@@ -19,5 +19,6 @@ export default {
   icons: 'Icons',
   'scroll-reveal': 'Scroll Reveal',
   'view-transition': 'View Transition',
+  'hero-exit-while-scrolling': 'Hero Exit While Scrolling',
   'rainbow-banner': 'Rainbow Banner',
 }
