@@ -9,8 +9,9 @@ export default {
   nav: 'Navigation',
   footer: 'Footer',
   posts: 'Posts',
-  'color-scheme': 'Color Scheme',
   toc: 'Table of Contents',
+  license: 'License',
+  'color-scheme': 'Color Scheme',
   _2: {
     type: 'separator',
     title: 'Advanced',
