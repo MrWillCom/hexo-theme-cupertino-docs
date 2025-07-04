@@ -1,0 +1,18 @@
+# Navigation
+
+![Screenshot of navigation](./img/nav.jpg)
+
+```yml filename="_config.cupertino.yml"
+nav:
+  title: Blog
+  items:
+    - name: Archives
+      url: /archives
+    - name: <i class="bi bi-search"></i>
+      is_icon: true
+      url: /search
+```
+
+The example configuration contains one text item and one icon item. You can add as many as you need. All items can be reordered.
+
+The navigation shows its title and all its items when the viewport is wider than 600px, otherwise, it will collapse. In order not to make the navigation put title and items in two lines, you had better limit your navigation items.
