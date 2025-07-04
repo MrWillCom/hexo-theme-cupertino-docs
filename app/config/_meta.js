@@ -2,17 +2,21 @@ export default {
   overview: 'Overview',
   _: {
     type: 'separator',
-    title: 'Basics',
+    title: 'Essentials',
   },
   metadata: 'Metadata',
   hero: 'Hero Section',
   nav: 'Navigation',
   footer: 'Footer',
+  license: 'License',
+  _2: {
+    type: 'separator',
+    title: 'Optionals',
+  },
   posts: 'Posts',
   toc: 'Table of Contents',
-  license: 'License',
   'color-scheme': 'Color Scheme',
-  _2: {
+  _3: {
     type: 'separator',
     title: 'Advanced',
   },
