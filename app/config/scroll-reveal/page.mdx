@@ -1,0 +1,30 @@
+# Scroll Reveal
+
+When scroll reveal is enabled, some specific content in the page will be hidden initially and will appear with an animation when user scroll to it, making static pages become more interactive and lively.
+
+import { Callout } from 'nextra/components'
+
+<Callout>
+  **Fun fact** In v1, scroll reveal is implemented with
+  [ScrollReveal](https://scrollrevealjs.org/).
+</Callout>
+
+Scroll reveal is ready out-of-box. But you can still customize it in your own way.
+
+To disable scroll reveal, set:
+
+```yml filename="_config.cupertino.yml"
+scroll_reveal: false
+```
+
+Not all content in the page is with scroll reveal. If you'd like to add custom elements to the list, append your selector after the defaults. The defaults are as the following:
+
+```yml filename="_config.cupertino.yml"
+scroll_reveal_query: .scroll-reveal, .post-list-item, .card, .content p img, .content .block-large img
+```
+
+Those with scroll reveal don't disappear after their appearance, therefore, they won't reappear during scrolling. To allow them to appear multiple times, set:
+
+```yml filename="_config.cupertino.yml"
+scroll_reveal_disappear: true
+```
