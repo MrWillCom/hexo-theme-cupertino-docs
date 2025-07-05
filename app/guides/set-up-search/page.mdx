@@ -1,0 +1,55 @@
+# Set Up Search
+
+Theme Cupertino uses [Pagefind](https://pagefind.app/) for searching. Search features are disabled initially because it requires to be set up.
+
+import { Steps, Callout } from 'nextra/components'
+
+<Steps>
+## Enable in configuration
+
+```yml filename="_config.cupertino.yml"# search
+search: true
+```
+
+## Install Pagefind
+
+```sh npm2yarn
+npm install pagefind
+```
+
+## Add script
+
+```json filename="package.json"
+{
+  "scripts": {
+    "index": "pagefind --site public"
+  }
+}
+```
+
+## Build index
+
+```sh npm2yarn
+npm run build && npm run index
+```
+
+<Callout type="info">
+  You have to build before indexing, or there will be nothing to index. You
+  should also adjust your deployment commands or CI/CD.
+</Callout>
+
+## Create search page
+
+```sh npm2yarn
+npm exec hexo new page 'search'
+```
+
+```md filename="source/search/index.md"
+---
+type: search
+---
+```
+
+Done! Now your search page is ready at `/search`.
+
+</Steps>
