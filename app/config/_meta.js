@@ -2,7 +2,7 @@ export default {
   overview: 'Overview',
   _: {
     type: 'separator',
-    title: 'Essentials',
+    title: 'Essential',
   },
   metadata: 'Metadata',
   hero: 'Hero Section',
@@ -11,12 +11,13 @@ export default {
   license: 'License',
   _2: {
     type: 'separator',
-    title: 'Optionals',
+    title: 'Optional',
   },
   posts: 'Posts',
   toc: 'Table of Contents',
   'color-scheme': 'Color Scheme',
   'builtin-components': 'Built-in Components',
+  'smooth-scroll': 'Smooth Scroll',
   _3: {
     type: 'separator',
     title: 'Advanced',
