@@ -23,9 +23,11 @@ export default {
     title: 'Advanced',
   },
   icons: 'Icons',
+  'date-display-format': 'Date Display Format',
   cdn: 'CDN',
   'scroll-reveal': 'Scroll Reveal',
   'view-transition': 'View Transition',
   'hero-exit-while-scrolling': 'Hero Exit While Scrolling',
+  'nav-blur-gradient': 'Nav Blur Gradient',
   'rainbow-banner': 'Rainbow Banner',
 }
