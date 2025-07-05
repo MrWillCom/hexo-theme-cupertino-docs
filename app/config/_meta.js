@@ -22,6 +22,7 @@ export default {
     type: 'separator',
     title: 'Advanced',
   },
+  insertions: 'Insertions',
   icons: 'Icons',
   'date-display-format': 'Date Display Format',
   cdn: 'CDN',
