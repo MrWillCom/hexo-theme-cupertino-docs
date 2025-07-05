@@ -17,6 +17,13 @@ Let's [get started](/get-started) now.
 
 import { Cards } from 'nextra/components'
 
-<br />
+import { Rocket, PlaneTakeoff } from 'lucide-react'
 
-<Cards.Card title="Get Started" href="/get-started" />
+<Cards>
+  <Cards.Card icon={<Rocket />} title="Get Started" href="/get-started" arrow />
+  <Cards.Card
+    icon={<PlaneTakeoff />}
+    title="Migrate from v1"
+    href="/guides/migrate-from-v1"
+  />
+</Cards>
