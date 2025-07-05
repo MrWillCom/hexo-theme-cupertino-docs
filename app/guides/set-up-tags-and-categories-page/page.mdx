@@ -1,0 +1,31 @@
+# Set Up Tags and Categories Page
+
+import { Steps } from 'nextra/components'
+
+Tags and categories features are enabled by default. But only part of them are available out-of-box. Tags and categories page cannot be generated without performing the following steps:
+
+<Steps>
+## Add two new pages
+
+```sh npm2yarn
+npm exec hexo new page 'tags'
+npm exec hexo new page 'categories'
+```
+
+## Replace the page content
+
+You should edit two new files at `source/tags/index.md` and `source/categories/index.md`. Replace all of their content with the following:
+
+```markdown filename="source/tags/index.md"
+---
+type: tags
+---
+```
+
+```markdown filename="source/categories/index.md"
+---
+type: categories
+---
+```
+
+</Steps>

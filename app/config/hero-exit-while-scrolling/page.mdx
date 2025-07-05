@@ -1,0 +1,27 @@
+# Hero Exit While Scrolling
+
+Hero exit while scrolling hides the hero section when the visitor scrolls down.
+
+This is enabled by default and will work in supported browsers. For those outdated ones, this feature won't make any effect.
+
+In order to ensure the performance, `hero_exit_while_scrolling.blur_filter` is `false` by default. The following video showcases the blur filter:
+
+<br />
+
+<video autoPlay loop muted>
+  <source src="/videos/hero-exit-while-scrolling.mp4" />
+</video>
+
+If blur filter looks good to you, you can enable it by setting:
+
+```yml filename="_config.cupertino.yml"
+hero_exit_while_scrolling:
+  blur_filter: true
+```
+
+If you don't want this feature, disable it:
+
+```yml filename="_config.cupertino.yml"
+hero_exit_while_scrolling:
+  enabled: false
+```

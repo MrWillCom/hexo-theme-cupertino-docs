@@ -1,0 +1,12 @@
+# CDN
+
+Theme Cupertino uses [UNPKG](https://unpkg.com/) as CDN to import third party dependencies. But you can set up your own by writing your own template. The following is the default configuration, you can modify it to make it suitable to your need.
+
+```yml filename="_config.cupertino.yml"
+cdn:
+  template: https://unpkg.com/:package@:version/:file
+  replacements:
+    package: :package
+    version: :version
+    file: :file
+```
