@@ -1,0 +1,117 @@
+import { Cards } from 'nextra/components'
+import { Component } from 'lucide-react'
+
+# Use Built-in Components
+
+All built-in components are enabled by default, so they are ready out-of-box. Further configuration can be found:
+
+<br />
+
+<Cards.Card
+  icon={<Component />}
+  title="Built-in Components"
+  href="/config/builtin-components"
+  arrow
+/>
+
+## Button
+
+Both links and buttons can be shaped into a button's appearance:
+
+![Screenshot of link button and button](./img/button.webp)
+
+```html
+<a class="action-button-primary" href="#">Links</a>
+<button class="action-button-primary">Button</button>
+```
+
+## Badge
+
+![Screenshot of badges](./img/badges.webp)
+
+```html
+<span class="badge">Stable</span>
+<span class="badge warning">Warning</span>
+<span class="badge secondary">Secondary</span>
+<span class="badge success">Success</span>
+```
+
+## Cards & Card Grids
+
+Card grids can help you place multiple cards. Cards presents information of an item clearly.
+
+![Screenshot of cards in a card grid](./img/cards.webp)
+
+{/* Spaces in the empty line are for line spacing */}
+
+```nunjucks
+{% cardGrid %}
+ 
+{% card %}
+ 
+{% cardCoverImg /img/000024.png "The logo of RSA CLI" %}
+ 
+{% cardContent %}
+ 
+{% cardContentTitle "RSA CLI" %}
+{% cardContentDescription "A command line tool for RSA encryption and decryption." %}
+ 
+{% endcardContent %}
+ 
+{% cardActions %}
+ 
+{% cardActionsLeft %}
+<span class="badge">Stable</span>
+{% endcardActionsLeft %}
+ 
+{% cardActionsRight %}
+<a class="action-button-primary" href="https://rsa.js.org/">Learn more</a>
+<button class="action-button-primary">Button</button>
+{% endcardActionsRight %}
+ 
+{% endcardActions %}
+ 
+{% endcard %}
+ 
+{% endcardGrid %}
+```
+
+## Carousel
+
+Carousel contains photos and allow visitors to scroll and view.
+
+![Screenshot of a carousel](./img/carousel.webp)
+
+```html
+<div class="carousel">
+  <img src="/img/000036.jpg" class="carousel-item" />
+  <figure>
+    <img
+      src="/img/000046.webp"
+      alt="Dolore est aliquip."
+      class="carousel-item"
+    />
+    <figcaption>Dolore est aliquip.</figcaption>
+  </figure>
+  <img src="/img/000041.webp" class="carousel-item" />
+  <img src="/img/000042.webp" class="carousel-item" />
+</div>
+```
+
+## Utilities
+
+### `.block-large`
+
+Add `class="block-large"` to the block elements that you want to allow it a wider container. The large blocks will be wider than the article if the viewport allows.
+
+### `.no-select`
+
+Prevents visitors from selecting texts. But note, the users still can access the unselectable text in DevTools.
+
+### `.text-left`, `-center`, `-right`
+
+Used for customizing text alignment, useful if you're placing headings.
+
+### `.text-uppercase`, `-lowercase`, `-capitalize`
+
+Used for transforming letters.
