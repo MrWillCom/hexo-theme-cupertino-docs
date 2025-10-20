@@ -1,12 +1,12 @@
 {
   "packageManager": "pnpm@10.17.1+sha512.17c560fca4867ae9473a3899ad84a88334914f379be46d455cbf92e5cf4b39d34985d452d2583baf19967fa76cb5c17bc9e245529d0b98745721aa7200ecaf7a",
   "dependencies": {
-    "lucide-react": "^0.544.0",
-    "next": "^15.5.4",
-    "nextra": "^4.5.1",
-    "nextra-theme-docs": "^4.5.1",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "lucide-react": "^0.546.0",
+    "next": "^15.5.6",
+    "nextra": "^4.6.0",
+    "nextra-theme-docs": "^4.6.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "scripts": {
     "dev": "next",
