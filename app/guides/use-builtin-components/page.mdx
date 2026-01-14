@@ -54,35 +54,35 @@ Card grids can help you place multiple cards. Cards presents information of an i
 
 {/* Spaces in the empty line are for line spacing */}
 
-```nunjucks
+```nunjucks showLineNumbers
 {% cardGrid %}
- 
+
 {% card %}
- 
+
 {% cardCoverImg /img/000024.png "The logo of RSA CLI" %}
- 
+
 {% cardContent %}
- 
+
 {% cardContentTitle "RSA CLI" %}
 {% cardContentDescription "A command line tool for RSA encryption and decryption." %}
- 
+
 {% endcardContent %}
- 
+
 {% cardActions %}
- 
+
 {% cardActionsLeft %}
 <span class="badge">Stable</span>
 {% endcardActionsLeft %}
- 
+
 {% cardActionsRight %}
 <a class="action-button-primary" href="https://rsa.js.org/">Learn more</a>
 <button class="action-button-primary">Button</button>
 {% endcardActionsRight %}
- 
+
 {% endcardActions %}
- 
+
 {% endcard %}
- 
+
 {% endcardGrid %}
 ```
 
