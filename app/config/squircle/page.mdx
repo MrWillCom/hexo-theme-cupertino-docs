@@ -1,0 +1,22 @@
+# Squircle Corners
+
+Squircle corners make all rounded corners squircle-shaped instead of circular, which gives a modern and sleek look.
+
+import { Tabs } from 'nextra/components'
+
+<Tabs items={['Squircle corners enabled', 'Squircle corners disabled']}>
+  <Tabs.Tab>
+    ![Screenshot of navigation with squircle corners
+    enabled](./img/squircle-enabled.webp)
+  </Tabs.Tab>
+  <Tabs.Tab>
+    ![Screenshot of navigation with squircle corners
+    disabled](./img/squircle-disabled.webp)
+  </Tabs.Tab>
+</Tabs>
+
+Because squircle corners use `@support` to ensure compatibility, it is enabled by default.
+
+```yml filename="_config.cupertino.yml"
+squircle: true
+```

@@ -31,4 +31,5 @@ export default {
   'hero-exit-while-scrolling': 'Hero Exit While Scrolling',
   'nav-blur-gradient': 'Nav Blur Gradient',
   'rainbow-banner': 'Rainbow Banner',
+  squircle: 'Squircle Corners',
 }
