@@ -14,7 +14,7 @@ All built-in components are enabled by default, so they are ready out-of-box. Fu
   arrow
 />
 
-## container
+## Container
 
 By default, everything in the main part has no margin or padding to the viewport's edge. This allows you to create wide content without being restricted by a fixed width. So you have to use `.container` to bring margin and padding back:
 
@@ -106,6 +106,34 @@ Carousel contains photos and allow visitors to scroll and view.
   <img src="/img/000041.webp" class="carousel-item" />
   <img src="/img/000042.webp" class="carousel-item" />
 </div>
+```
+
+## Callout
+
+Callouts are used to highlight important information.
+
+![Screenshot of callouts in 4 types](./img/callout.webp)
+
+```html
+<htc-callout>
+  <span slot="title">Default</span>
+  Your content goes here.
+</htc-callout>
+<htc-callout type="warning">
+  <span slot="icon"><i class="bi bi-exclamation-triangle-fill"></i></span>
+  <span slot="title">Warning</span>
+  Your content goes here.
+</htc-callout>
+<htc-callout type="accent">
+  <span slot="icon"><i class="bi bi-palette-fill"></i></span>
+  <span slot="title">Accent</span>
+  Your content goes here.
+</htc-callout>
+<htc-callout type="success">
+  <span slot="icon"><i class="bi bi-check-circle-fill"></i></span>
+  <span slot="title">Success</span>
+  Your content goes here.
+</htc-callout>
 ```
 
 ## Utilities
