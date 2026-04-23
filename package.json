@@ -1,12 +1,12 @@
 {
-  "packageManager": "pnpm@10.30.3+sha512.c961d1e0a2d8e354ecaa5166b822516668b7f44cb5bd95122d590dd81922f606f5473b6d23ec4a5be05e7fcd18e8488d47d978bbe981872f1145d06e9a740017",
+  "packageManager": "pnpm@10.33.1+sha512.05ba3c1d5d1c18f68df06470d74055e62d41fc110a0c660db1b2dfb2785327f04cf0f68345d4609bc52089e7fa0343c31593b2f9594e2c5d5da426230acc9820",
   "dependencies": {
-    "lucide-react": "^0.575.0",
-    "next": "^16.1.6",
+    "lucide-react": "^1.8.0",
+    "next": "^16.2.4",
     "nextra": "^4.6.1",
     "nextra-theme-docs": "^4.6.1",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
   },
   "scripts": {
     "dev": "next",
@@ -16,7 +16,7 @@
     "format": "prettier . --write"
   },
   "devDependencies": {
-    "pagefind": "^1.4.0",
-    "prettier": "^3.8.1"
+    "pagefind": "^1.5.2",
+    "prettier": "^3.8.3"
   }
 }
