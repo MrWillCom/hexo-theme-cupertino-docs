@@ -1,0 +1,12 @@
+# CDN
+
+Cupertino 主题使用 [UNPKG](https://unpkg.com/) 作为 CDN 来引入第三方依赖。但你可以通过编写自己的模板来设置自己的 CDN。以下是默认配置，你可以修改它以适合你的需要。
+
+```yml filename="_config.cupertino.yml"
+cdn:
+  template: https://unpkg.com/:package@:version/:file
+  replacements:
+    package: :package
+    version: :version
+    file: :file
+```

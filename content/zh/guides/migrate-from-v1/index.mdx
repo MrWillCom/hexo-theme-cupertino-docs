@@ -1,0 +1,109 @@
+import { Steps, Cards } from 'nextra/components'
+import {
+  LayoutPanelTop,
+  PanelTop,
+  PanelBottom,
+  Search,
+  Grid3x3,
+  BetweenHorizontalEnd,
+  Wrench,
+} from 'lucide-react'
+
+# 从 v1 迁移
+
+<Steps>
+## 更新主题
+
+自 v2 起，你有更多方式安装 Cupertino 主题，但旧的方式仍然可以使用。如果你想改用其他方式，请前往[快速开始](/get-started)。
+
+然后，根据你的安装方式更新主题。
+
+## 使用 `_config.cupertino.yml` 而不是直接修改子模块
+
+在 v2 中，`_config.cupertino.yml` 是更推荐的自定义博客的方式，因为它更直观。
+
+## 添加 `hero`
+
+博客配置中的 `title` 和 `subtitle` 不再用作首页的首屏区域。你需要添加如下配置：
+
+```yml filename="_config.cupertino.yml"
+hero:
+  title: <博客标题>
+  description: <博客副标题>
+```
+
+<br />
+
+<Cards.Card
+  icon={<LayoutPanelTop />}
+  title="首屏区域"
+  href="/config/hero"
+  arrow
+/>
+
+## 迁移导航栏和页脚
+
+<Cards num={2}>
+  <Cards.Card icon={<PanelTop />} title="导航栏" href="/config/nav" arrow />
+  <Cards.Card
+    icon={<PanelBottom />}
+    title="页脚"
+    href="/config/footer"
+    arrow
+  />
+</Cards>
+
+## 迁移搜索
+
+不再使用 [hexo-generator-search](https://github.com/wzpan/hexo-generator-search)，你应该迁移到 [Pagefind](https://pagefind.app/)。
+
+<br />
+
+<Cards.Card
+  icon={<Search />}
+  title="设置搜索"
+  href="/guides/set-up-search"
+  arrow
+/>
+
+## 从内置图标迁移到图标库
+
+社交媒体平台的图标已替换为 [Simple Icons](https://simpleicons.org/)，其他图标现在使用 [Bootstrap Icons](https://icons.getbootstrap.com/)。
+
+尤其是在导航栏中，那些自动图标转换已被废弃。从现在开始，你应该使用类似 `<i class="si si-github"></i>` 的写法。
+
+<br />
+
+<Cards.Card icon={<Grid3x3 />} title="图标" href="/config/icons" arrow />
+
+## 将一些修改迁移到 `insertions`
+
+如果你过去通过修改 Cupertino 主题源码来添加自定义 `<style />`、`<link />` 等，现在它们有了更安全的位置。
+
+<br />
+
+<Cards.Card
+  icon={<BetweenHorizontalEnd />}
+  title="注入"
+  href="/config/insertions"
+  arrow
+/>
+
+## `og_enabled`、`og_image` 和 `og` 已废弃
+
+Open Graph 生成现在使用 [Hexo 内置的 `open_graph` 辅助函数](https://hexo.io/docs/helpers#open-graph)。
+
+完成！重新构建即可体验最新功能。
+
+</Steps>
+
+## 下一步
+
+<br />
+
+<Cards.Card
+  icon={<Wrench />}
+  title="配置"
+  href="/config/overview"
+  arrow
+/>

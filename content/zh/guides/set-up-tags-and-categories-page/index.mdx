@@ -1,0 +1,31 @@
+# 设置标签与分类页
+
+import { Steps } from 'nextra/components'
+
+标签和分类功能默认是开启的，但只有部分功能开箱即用。如果不执行以下步骤，则无法生成标签页和分类页：
+
+<Steps>
+## 新建两个页面
+
+```sh npm2yarn
+npm exec hexo new page 'tags'
+npm exec hexo new page 'categories'
+```
+
+## 替换页面内容
+
+编辑新建的两个文件 `source/tags/index.md` 和 `source/categories/index.md`，将其内容全部替换为：
+
+```markdown filename="source/tags/index.md"
+---
+type: tags
+---
+```
+
+```markdown filename="source/categories/index.md"
+---
+type: categories
+---
+```
+
+</Steps>

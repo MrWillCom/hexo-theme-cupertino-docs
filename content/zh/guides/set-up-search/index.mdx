@@ -1,0 +1,55 @@
+# 设置搜索
+
+Cupertino 主题使用 [Pagefind](https://pagefind.app/) 进行搜索。搜索功能默认是关闭的，因为它需要额外配置。
+
+import { Steps, Callout } from 'nextra/components'
+
+<Steps>
+## 在配置中启用
+
+```yml filename="_config.cupertino.yml"
+search: true
+```
+
+## 安装 Pagefind
+
+```sh npm2yarn
+npm install pagefind
+```
+
+## 添加脚本
+
+```json filename="package.json"
+{
+  "scripts": {
+    "index": "pagefind --site public"
+  }
+}
+```
+
+## 构建索引
+
+```sh npm2yarn
+npm run build
+npm run index
+```
+
+<Callout type="info">
+  必须先构建再索引，否则没有内容可供索引。你也需要同步调整部署命令或 CI/CD。
+</Callout>
+
+## 创建搜索页面
+
+```sh npm2yarn
+npm exec hexo new page 'search'
+```
+
+```md filename="source/search/index.md"
+---
+type: search
+---
+```
+
+完成！现在你的搜索页面就绪，访问地址为 `/search`。
+
+</Steps>

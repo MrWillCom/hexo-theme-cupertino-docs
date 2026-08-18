@@ -1,0 +1,18 @@
+# 导航栏
+
+![导航栏截图](./img/nav.jpg)
+
+```yml filename="_config.cupertino.yml"
+nav:
+  title: Blog
+  items:
+    - name: Archives
+      url: /archives
+    - name: <i class="bi bi-search"></i>
+      is_icon: true
+      url: /search
+```
+
+示例配置包含一个文本项和一个图标项。你可以根据需要添加任意多个，所有项目都可以重新排序。
+
+当视口宽度大于 600px 时，导航栏会显示标题和所有项目，否则会折叠。为了避免导航栏把标题和项目挤成两行，最好控制导航项目的数量。
