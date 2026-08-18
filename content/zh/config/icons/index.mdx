@@ -1,0 +1,16 @@
+# 图标
+
+Cupertino 主题内置支持两个图标库——[Simple Icons](https://simpleicons.org/) 和 [Bootstrap Icons](https://icons.getbootstrap.com/)。它们默认启用。使用方法请参阅它们的官方文档。
+
+不过，如果你确实不需要它们，可以通过以下配置禁用：
+
+```yml filename="_config.cupertino.yml"
+simple_icons: false
+bootstrap_icons: false
+```
+
+import { Callout } from 'nextra/components'
+
+<Callout type="warning">
+  Cupertino 主题需要 Bootstrap Icons 来显示部分界面图标，除非你确切知道自己在做什么，否则不要关闭它。
+</Callout>

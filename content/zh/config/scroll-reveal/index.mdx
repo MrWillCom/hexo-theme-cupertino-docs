@@ -1,0 +1,29 @@
+# 滚动显现
+
+启用滚动显现后，页面中的部分内容会先隐藏，当用户滚动到它时再以动画的形式出现，让静态页面变得更有交互性和活力。
+
+import { Callout } from 'nextra/components'
+
+<Callout>
+  **有趣的是** 在 v1 中，滚动显现使用 [ScrollReveal](https://scrollrevealjs.org/) 实现，在 v2 中被更简单的实现取代。
+</Callout>
+
+滚动显现开箱即用。但你仍然可以按自己的方式自定义它。
+
+要禁用滚动显现，请设置：
+
+```yml filename="_config.cupertino.yml"
+scroll_reveal: false
+```
+
+并非页面中的所有内容都带有滚动显现。如果你想向列表中添加自定义元素，请在默认值之后追加你的选择器。默认值如下：
+
+```yml filename="_config.cupertino.yml"
+scroll_reveal_query: .scroll-reveal, .post-list-item, .card, .content p img, .content .block-large img
+```
+
+带有滚动显现的内容出现后不会消失，因此不会在滚动过程中再次出现。要允许它们多次出现，请设置：
+
+```yml filename="_config.cupertino.yml"
+scroll_reveal_disappear: true
+```
