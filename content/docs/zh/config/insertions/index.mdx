@@ -1,0 +1,16 @@
+---
+title: "插入"
+---
+
+插入是把其他东西放进博客的最佳方式。如果你想添加即时聊天、自定义 CSS 等，可以使用插入。目前，Cupertino 主题支持以下插入位置：
+
+```yml title="_config.cupertino.yml"
+insertions:
+  head:
+    ending: ''
+  body:
+    ending: ''
+  comments_section: ''
+```
+
+`comments_section` 是评论区的特殊位置。它遵循文章 front-matter 中的 `no_comments` 选项。如果 `no_comments` 设置为 true，`comments_section` 中的插入将不会渲染。

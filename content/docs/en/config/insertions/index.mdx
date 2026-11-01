@@ -1,0 +1,16 @@
+---
+title: "Insertions"
+---
+
+Insertions is the best way to integrate other stuff into your blog. If you would like to add instant chatting, custom CSS and more, you can use insertions. Currently, Theme Cupertino accepts the following insertion positions:
+
+```yml title="_config.cupertino.yml"
+insertions:
+  head:
+    ending: ''
+  body:
+    ending: ''
+  comments_section: ''
+```
+
+`comments_section` is a special position for comments. It follows `no_comments` option in your post front-matter. If `no_comments` is set to true, insertions in `comments_section` will not be rendered.

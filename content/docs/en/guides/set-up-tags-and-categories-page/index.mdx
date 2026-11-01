@@ -1,0 +1,40 @@
+---
+title: "Set Up Tags and Categories Page"
+---
+
+Tags and categories features are enabled by default. But only part of them are available out-of-box. Tags and categories page cannot be generated without performing the following steps:
+
+<Steps>
+
+<Step>
+
+## Add two new pages
+
+```npm
+npm exec hexo new page 'tags'
+npm exec hexo new page 'categories'
+```
+
+</Step>
+
+<Step>
+
+## Replace the page content
+
+You should edit two new files at `source/tags/index.md` and `source/categories/index.md`. Replace all of their content with the following:
+
+```markdown title="source/tags/index.md"
+---
+type: tags
+---
+```
+
+```markdown title="source/categories/index.md"
+---
+type: categories
+---
+```
+
+</Step>
+
+</Steps>

@@ -1,0 +1,29 @@
+{
+  "title": "配置",
+  "pages": [
+    "overview",
+    "---基础---",
+    "metadata",
+    "hero",
+    "nav",
+    "footer",
+    "license",
+    "---可选---",
+    "posts",
+    "toc",
+    "color-scheme",
+    "builtin-components",
+    "smooth-scroll",
+    "---高级---",
+    "insertions",
+    "icons",
+    "date-display-format",
+    "cdn",
+    "scroll-reveal",
+    "view-transition",
+    "hero-exit-while-scrolling",
+    "nav-blur-gradient",
+    "rainbow-banner",
+    "squircle"
+  ]
+}

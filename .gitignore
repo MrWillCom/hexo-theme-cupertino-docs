@@ -138,7 +138,7 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 
-# Pagefind
-_pagefind/
+# Fumadocs MDX generated output
+.source
 
 .DS_Store

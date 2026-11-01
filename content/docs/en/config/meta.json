@@ -1,0 +1,29 @@
+{
+  "title": "Configuration",
+  "pages": [
+    "overview",
+    "---Essential---",
+    "metadata",
+    "hero",
+    "nav",
+    "footer",
+    "license",
+    "---Optional---",
+    "posts",
+    "toc",
+    "color-scheme",
+    "builtin-components",
+    "smooth-scroll",
+    "---Advanced---",
+    "insertions",
+    "icons",
+    "date-display-format",
+    "cdn",
+    "scroll-reveal",
+    "view-transition",
+    "hero-exit-while-scrolling",
+    "nav-blur-gradient",
+    "rainbow-banner",
+    "squircle"
+  ]
+}

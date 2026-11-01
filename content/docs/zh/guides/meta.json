@@ -1,0 +1,9 @@
+{
+  "title": "指南",
+  "pages": [
+    "migrate-from-v1",
+    "set-up-tags-and-categories-page",
+    "set-up-search",
+    "use-builtin-components"
+  ]
+}
