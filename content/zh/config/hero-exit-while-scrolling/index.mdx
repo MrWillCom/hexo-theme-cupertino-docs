@@ -1,0 +1,27 @@
+# 滚动时首屏退出
+
+滚动时首屏退出会在访客向下滚动时隐藏首屏区域。
+
+此功能默认启用，并且只在支持的浏览器中生效。对于过时的浏览器，此功能不会产生任何效果。
+
+为了确保性能，`hero_exit_while_scrolling.blur_filter` 默认为 `false`。以下视频展示了模糊滤镜效果：
+
+<br />
+
+<video autoPlay loop muted>
+  <source src="/videos/hero-exit-while-scrolling.mp4" />
+</video>
+
+如果你觉得模糊滤镜效果不错，可以通过以下配置启用：
+
+```yml filename="_config.cupertino.yml"
+hero_exit_while_scrolling:
+  blur_filter: true
+```
+
+如果你不想要此功能，可以禁用它：
+
+```yml filename="_config.cupertino.yml"
+hero_exit_while_scrolling:
+  enabled: false
+```

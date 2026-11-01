@@ -1,0 +1,21 @@
+# 内置组件
+
+所有组件默认启用，但你仍然可以禁用其中一部分。所有内置组件如下：
+
+```yml filename="_config.cupertino.yml"
+builtin_components:
+  card: true
+  button: true
+  badge: true
+  utilities: true
+  carousel: true
+  callout: true
+```
+
+设置为 `false` 可以禁用对应的组件。
+
+import { Callout } from 'nextra/components'
+
+<Callout type="warning">
+  但是，禁用某些内置组件可能会破坏主题的样式。建议保持所有组件启用。
+</Callout>
