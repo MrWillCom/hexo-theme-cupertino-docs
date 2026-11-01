@@ -1,0 +1,40 @@
+---
+title: '配置标签与分类页'
+---
+
+import { Step, Steps } from 'fumadocs-ui/components/steps'
+
+标签和分类功能默认是开启的，但只有部分功能开箱即用。如果不执行以下步骤，则无法生成标签页和分类页：
+
+<Steps>
+<Step>
+
+## 新建两个页面
+
+```npm
+npm exec hexo new page 'tags'
+npm exec hexo new page 'categories'
+```
+
+</Step>
+
+<Step>
+
+## 替换页面内容
+
+编辑新建的两个文件 `source/tags/index.md` 和 `source/categories/index.md`，将其内容全部替换为：
+
+```markdown title="source/tags/index.md"
+---
+type: tags
+---
+```
+
+```markdown title="source/categories/index.md"
+---
+type: categories
+---
+```
+
+</Step>
+</Steps>

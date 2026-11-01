@@ -1,0 +1,19 @@
+---
+title: 'Overview'
+---
+
+import { File, Files, Folder } from 'fumadocs-ui/components/files'
+
+There are two configuration files in your blog project. `_config.yml` in the root of your blog is your blog configuration. Theme Cupertino keeps default configurations in its directory. In order to override defaults, you need `_config.cupertino.yml` in the root. After creating this configuration file, the project structure should look like this:
+
+<Files>
+  <Folder name="your-blog" defaultOpen>
+    <File name="_config.yml" />
+    <File name="_config.cupertino.yml" />
+    <File name="..." />
+    <Folder name="source">
+      <File name="..." />
+    </Folder>
+    <Folder name="..." />
+  </Folder>
+</Files>

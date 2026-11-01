@@ -1,0 +1,33 @@
+---
+title: '彩虹横幅'
+---
+
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs'
+
+<Tabs items={['启用彩虹横幅', '禁用彩虹横幅']}>
+  <Tab value="启用彩虹横幅">
+    ![启用彩虹横幅时的导航栏截图](./img/rainbow-banner/rainbow-banner-enabled.jpg)
+  </Tab>
+  <Tab value="禁用彩虹横幅">
+    ![禁用彩虹横幅时的导航栏截图](./img/rainbow-banner/rainbow-banner-disabled.jpg)
+  </Tab>
+</Tabs>
+
+彩虹横幅默认禁用。启用后它会在每年六月出现：
+
+```yml title="_config.cupertino.yml"
+rainbow_banner: true
+rainbow_banner_colors:
+  - '#e50000'
+  - '#ff8d00'
+  - '#ffee00'
+  - '#008121'
+  - '#004cff'
+  - '#760188'
+rainbow_banner_shown: auto
+rainbow_banner_month: 6
+```
+
+`rainbow_banner_colors` 接受一个 CSS 颜色数组。`rainbow_banner_shown` 接受 `auto` 或 `always`。
+
+要让彩虹横幅全年显示，请将 `rainbow_banner_shown` 改为 `always`。

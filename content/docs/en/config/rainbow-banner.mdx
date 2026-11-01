@@ -1,0 +1,35 @@
+---
+title: 'Rainbow Banner'
+---
+
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs'
+
+<Tabs items={['Rainbow banner enabled', 'Rainbow banner disabled']}>
+  <Tab value="Rainbow banner enabled">
+    ![Screenshot of navigation with rainbow banner
+    enabled](./img/rainbow-banner/rainbow-banner-enabled.jpg)
+  </Tab>
+  <Tab value="Rainbow banner disabled">
+    ![Screenshot of navigation with rainbow banner
+    disabled](./img/rainbow-banner/rainbow-banner-disabled.jpg)
+  </Tab>
+</Tabs>
+
+Rainbow banner is disabled by default. Enabling it will make it appear every June:
+
+```yml title="_config.cupertino.yml"
+rainbow_banner: true
+rainbow_banner_colors:
+  - '#e50000'
+  - '#ff8d00'
+  - '#ffee00'
+  - '#008121'
+  - '#004cff'
+  - '#760188'
+rainbow_banner_shown: auto
+rainbow_banner_month: 6
+```
+
+`rainbow_banner_colors` accepts an array of CSS colors. `rainbow_banner_shown` accepts `auto` or `always`.
+
+To to display rainbow banner all year long, change `rainbow_banner_shown` to `always`.

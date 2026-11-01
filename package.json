@@ -1,10 +1,12 @@
 {
   "packageManager": "pnpm@10.33.1+sha512.05ba3c1d5d1c18f68df06470d74055e62d41fc110a0c660db1b2dfb2785327f04cf0f68345d4609bc52089e7fa0343c31593b2f9594e2c5d5da426230acc9820",
   "dependencies": {
+    "@fumadocs/language": "^0.2.17",
+    "fumadocs-core": "^16.17.9",
+    "fumadocs-mdx": "^15.4.10",
+    "fumadocs-ui": "npm:@fumadocs/base-ui@^16.17.9",
     "lucide-react": "^1.28.0",
     "next": "^16.2.12",
-    "nextra": "^4.6.1",
-    "nextra-theme-docs": "^4.6.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8"
   },
@@ -12,11 +14,16 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "postbuild": "pagefind --site .next/server/app --output-path public/_pagefind",
     "format": "prettier . --write"
   },
   "devDependencies": {
-    "pagefind": "^1.5.2",
-    "prettier": "^3.9.6"
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/mdx": "^2.0.14",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "prettier": "^3.9.6",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^6.0.3"
   }
 }

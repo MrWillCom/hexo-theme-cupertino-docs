@@ -1,0 +1,24 @@
+---
+title: 'Squircle Corners'
+---
+
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs'
+
+Squircle corners make all rounded corners squircle-shaped instead of circular, which gives a modern and sleek look.
+
+<Tabs items={['Squircle corners enabled', 'Squircle corners disabled']}>
+  <Tab value="Squircle corners enabled">
+    ![Screenshot of navigation with squircle corners
+    enabled](./img/squircle/squircle-enabled.webp)
+  </Tab>
+  <Tab value="Squircle corners disabled">
+    ![Screenshot of navigation with squircle corners
+    disabled](./img/squircle/squircle-disabled.webp)
+  </Tab>
+</Tabs>
+
+Because squircle corners use `@support` to ensure compatibility, it is enabled by default.
+
+```yml title="_config.cupertino.yml"
+squircle: true
+```

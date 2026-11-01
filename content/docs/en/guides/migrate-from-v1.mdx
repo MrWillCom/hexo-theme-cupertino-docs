@@ -1,0 +1,130 @@
+---
+title: 'Migrate from v1'
+---
+
+import { Step, Steps } from 'fumadocs-ui/components/steps'
+
+import {
+  LayoutPanelTop,
+  PanelTop,
+  PanelBottom,
+  Search,
+  Grid3x3,
+  BetweenHorizontalEnd,
+  Wrench,
+} from 'lucide-react'
+
+<Steps>
+<Step>
+
+## Update theme
+
+Since v2, you have more methods to install Theme Cupertino, but the old method is still good to use. If you want to change to other methods, go to [Get Started](/[lang]/get-started).
+
+Then, you need to update your theme according to your installation method.
+
+</Step>
+
+<Step>
+
+## Use `_config.cupertino.yml` instead of modifying the submodule
+
+In v2, `_config.cupertino.yml` is preferred as it's a more straightforward method to customize your blog.
+
+</Step>
+
+<Step>
+
+## Add `hero`
+
+`title` and `subtitle` of your blog configuration is no longer used as the hero section of the home page. You need to add the following configuration:
+
+```yml title="_config.cupertino.yml"
+hero:
+  title: <blog-title>
+  description: <blog-subtitle>
+```
+
+<br />
+
+<Card
+  icon={<LayoutPanelTop />}
+  title="Hero Section"
+  href="/[lang]/config/hero"
+/>
+
+</Step>
+
+<Step>
+
+## Migrate navigation and footer
+
+<Cards>
+  <Card icon={<PanelTop />} title="Navigation" href="/[lang]/config/nav" />
+  <Card icon={<PanelBottom />} title="Footer" href="/[lang]/config/footer" />
+</Cards>
+
+</Step>
+
+<Step>
+
+## Migrate search
+
+[hexo-generator-search](https://github.com/wzpan/hexo-generator-search) is no longer used, you should migrate to [Pagefind](https://pagefind.app/).
+
+<br />
+
+<Card
+  icon={<Search />}
+  title="Set Up Search"
+  href="/[lang]/guides/set-up-search"
+/>
+
+</Step>
+
+<Step>
+
+## Migrate from saved icons to icon packs
+
+The icons for social media platforms are replaced with [Simple Icons](https://simpleicons.org/) and other icons are now using [Bootstrap Icons](https://icons.getbootstrap.com/).
+
+Especially in navigation, those auto icon transformations are deprecated. You should use something like `<i class="si si-github"></i>` from now on.
+
+<br />
+
+<Card icon={<Grid3x3 />} title="Icons" href="/[lang]/config/icons" />
+
+</Step>
+
+<Step>
+
+## Move some modifications to `insertions`
+
+If you used to modify the source code of Theme Cupertino to add custom `<style />`, `<link />` and so on, they have safer place to reside now.
+
+<br />
+
+<Card
+  icon={<BetweenHorizontalEnd />}
+  title="Insertions"
+  href="/[lang]/config/insertions"
+/>
+
+</Step>
+
+<Step>
+
+## `og_enabled`, `og_image` and `og` are deprecated
+
+Open Graph generation uses [Hexo's built-in helper `open_graph`](https://hexo.io/docs/helpers#open-graph).
+
+Done! Build again to bring the latest features to life.
+
+</Step>
+</Steps>
+
+## Next Steps
+
+<br />
+
+<Card icon={<Wrench />} title="Configuration" href="/[lang]/config/overview" />
