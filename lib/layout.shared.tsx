@@ -16,9 +16,7 @@ export const translations = i18n
     },
   })
 
-export function baseOptions(
-  locale: string = i18n.defaultLanguage,
-): BaseLayoutProps {
+export function baseOptions(locale: string = i18n.defaultLanguage): BaseLayoutProps {
   return {
     nav: {
       title: 'Hexo Theme Cupertino',

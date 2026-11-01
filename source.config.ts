@@ -13,16 +13,7 @@ export default defineConfig({
         dark: 'github-dark',
       },
       defaultColor: false,
-      langs: [
-        'html',
-        'jinja',
-        'json',
-        'markdown',
-        'md',
-        'shellscript',
-        'yaml',
-        'yml',
-      ],
+      langs: ['html', 'jinja', 'json', 'markdown', 'md', 'shellscript', 'yaml', 'yml'],
       langAlias: {
         nunjucks: 'jinja',
         sh: 'shellscript',

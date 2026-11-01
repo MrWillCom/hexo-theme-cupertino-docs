@@ -16,10 +16,7 @@ function routeParams(params: ReturnType<typeof useParams>) {
   return resolved
 }
 
-export function localizeHref(
-  href: string,
-  params: Record<string, string | string[]>,
-) {
+export function localizeHref(href: string, params: Record<string, string | string[]>) {
   let next = updateHref(decodeURIComponent(href), params)
 
   if (i18n.hideLocale === 'default-locale') {
@@ -38,9 +35,7 @@ export function useLocalizedHref(href?: string) {
 }
 
 export function LocalizedLink({ href, ...props }: ComponentProps<typeof Link>) {
-  const localized = useLocalizedHref(
-    typeof href === 'string' ? href : undefined,
-  )
+  const localized = useLocalizedHref(typeof href === 'string' ? href : undefined)
 
   return <Link href={localized ?? href} {...props} />
 }

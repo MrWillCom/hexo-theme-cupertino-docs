@@ -12,9 +12,7 @@ import {
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
-export default async function Page(props: {
-  params: Promise<{ lang: string; slug?: string[] }>
-}) {
+export default async function Page(props: { params: Promise<{ lang: string; slug?: string[] }> }) {
   const params = await props.params
   const page = source.getPage(params.slug, params.lang)
   if (!page) notFound()
