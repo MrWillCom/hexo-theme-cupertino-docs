@@ -5,12 +5,13 @@
 import { Callout } from 'nextra/components'
 
 <Callout>
-  **有趣的是** 在 v1 中，滚动显现使用 [ScrollReveal](https://scrollrevealjs.org/) 实现，在 v2 中被更简单的实现取代。
+  **有趣的是** 在 v1 中，滚动显现使用
+  [ScrollReveal](https://scrollrevealjs.org/) 实现，在 v2 中被更简单的实现取代。
 </Callout>
 
 滚动显现开箱即用。但你仍然可以按自己的方式自定义它。
 
-要禁用滚动显现，请设置：
+要禁用滚动显现，请配置：
 
 ```yml filename="_config.cupertino.yml"
 scroll_reveal: false
@@ -22,7 +23,7 @@ scroll_reveal: false
 scroll_reveal_query: .scroll-reveal, .post-list-item, .card, .content p img, .content .block-large img
 ```
 
-带有滚动显现的内容出现后不会消失，因此不会在滚动过程中再次出现。要允许它们多次出现，请设置：
+带有滚动显现的内容出现后不会消失，因此不会在滚动过程中再次出现。要允许它们多次出现，请配置：
 
 ```yml filename="_config.cupertino.yml"
 scroll_reveal_disappear: true

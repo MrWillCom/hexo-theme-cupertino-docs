@@ -22,7 +22,7 @@ export default {
     type: 'separator',
     title: '高级',
   },
-  insertions: '注入',
+  insertions: '插入',
   icons: '图标',
   'date-display-format': '日期显示格式',
   cdn: 'CDN',

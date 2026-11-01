@@ -28,8 +28,8 @@ import {
 
 ```yml filename="_config.cupertino.yml"
 hero:
-  title: <博客标题>
-  description: <博客副标题>
+  title: <blog-title>
+  description: <blog-subtitle>
 ```
 
 <br />
@@ -45,12 +45,7 @@ hero:
 
 <Cards num={2}>
   <Cards.Card icon={<PanelTop />} title="导航栏" href="/config/nav" arrow />
-  <Cards.Card
-    icon={<PanelBottom />}
-    title="页脚"
-    href="/config/footer"
-    arrow
-  />
+  <Cards.Card icon={<PanelBottom />} title="页脚" href="/config/footer" arrow />
 </Cards>
 
 ## 迁移搜索
@@ -61,12 +56,12 @@ hero:
 
 <Cards.Card
   icon={<Search />}
-  title="设置搜索"
+  title="配置搜索"
   href="/guides/set-up-search"
   arrow
 />
 
-## 从内置图标迁移到图标库
+## 从旧的内置图标迁移到图标库
 
 社交媒体平台的图标已替换为 [Simple Icons](https://simpleicons.org/)，其他图标现在使用 [Bootstrap Icons](https://icons.getbootstrap.com/)。
 
@@ -84,7 +79,7 @@ hero:
 
 <Cards.Card
   icon={<BetweenHorizontalEnd />}
-  title="注入"
+  title="插入"
   href="/config/insertions"
   arrow
 />
@@ -101,9 +96,4 @@ Open Graph 生成现在使用 [Hexo 内置的 `open_graph` 辅助函数](https:/
 
 <br />
 
-<Cards.Card
-  icon={<Wrench />}
-  title="配置"
-  href="/config/overview"
-  arrow
-/>
+<Cards.Card icon={<Wrench />} title="配置" href="/config/overview" arrow />

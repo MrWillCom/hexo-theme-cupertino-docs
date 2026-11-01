@@ -20,7 +20,7 @@ import { Component } from 'lucide-react'
 
 ```html
 <div class="container">
-  <!-- 你的内容 -->
+  <!-- your content here -->
 </div>
 ```
 
@@ -31,8 +31,8 @@ import { Component } from 'lucide-react'
 ![链接按钮和按钮截图](./img/button.webp)
 
 ```html
-<a class="action-button-primary" href="#">链接</a>
-<button class="action-button-primary">按钮</button>
+<a class="action-button-primary" href="#">Links</a>
+<button class="action-button-primary">Button</button>
 ```
 
 ## 徽章（Badge）
@@ -52,19 +52,19 @@ import { Component } from 'lucide-react'
 
 ![卡片网格中的卡片截图](./img/cards.webp)
 
-{/* 空行中的空格用于行距 */}
+{/* Spaces in the empty line are for line spacing */}
 
 ```nunjucks showLineNumbers
 {% cardGrid %}
 
 {% card %}
 
-{% cardCoverImg /img/000024.png "RSA CLI 的标志" %}
+{% cardCoverImg /img/000024.png "The logo of RSA CLI" %}
 
 {% cardContent %}
 
 {% cardContentTitle "RSA CLI" %}
-{% cardContentDescription "用于 RSA 加密和解密的命令行工具。" %}
+{% cardContentDescription "A command line tool for RSA encryption and decryption." %}
 
 {% endcardContent %}
 
@@ -75,8 +75,8 @@ import { Component } from 'lucide-react'
 {% endcardActionsLeft %}
 
 {% cardActionsRight %}
-<a class="action-button-primary" href="https://rsa.js.org/">了解更多</a>
-<button class="action-button-primary">按钮</button>
+<a class="action-button-primary" href="https://rsa.js.org/">Learn more</a>
+<button class="action-button-primary">Button</button>
 {% endcardActionsRight %}
 
 {% endcardActions %}
@@ -118,23 +118,23 @@ import { Component } from 'lucide-react'
 
 ```html
 <htc-callout>
-  <span slot="title">默认</span>
-  你的内容写在这里。
+  <span slot="title">Default</span>
+  Your content goes here.
 </htc-callout>
 <htc-callout type="warning">
   <span slot="icon"><i class="bi bi-exclamation-triangle-fill"></i></span>
-  <span slot="title">警告</span>
-  你的内容写在这里。
+  <span slot="title">Warning</span>
+  Your content goes here.
 </htc-callout>
 <htc-callout type="accent">
   <span slot="icon"><i class="bi bi-palette-fill"></i></span>
-  <span slot="title">强调</span>
-  你的内容写在这里。
+  <span slot="title">Accent</span>
+  Your content goes here.
 </htc-callout>
 <htc-callout type="success">
   <span slot="icon"><i class="bi bi-check-circle-fill"></i></span>
-  <span slot="title">成功</span>
-  你的内容写在这里。
+  <span slot="title">Success</span>
+  Your content goes here.
 </htc-callout>
 ```
 
